@@ -36,7 +36,6 @@ if __name__ == "__main__":
                 temperature=TEMPERATURE,
                 max_new_tokens=MAX_NEW_TOKENS,
                 return_dict_in_generate=True,
-                output_scores=True,
             )
 
         generated_ids = outputs.sequences.squeeze()[prompt_length:]
